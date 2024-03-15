@@ -1,7 +1,7 @@
 
 
 
-/* ===== INTRO ===== */
+/*  INTRO  */
 const tl = gsap.timeline({ defaults: { ease: Power1.easeInOut } });
 const home = document.getElementById('home')
 
@@ -14,7 +14,7 @@ tl.fromTo("#home", { opacity: 0 }, { opacity: 1, duration: .40, delay: -0.36 });
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: .40, delay: -0.29  });
 
 
-/* ===== OUTRO ===== */
+/*  OUTRO  */
 const page = document.querySelector('[data-id]')
 
 function redirect(project){
@@ -49,7 +49,7 @@ function redirectback(path,anchor){
 
 
 
-/* ===== SIGUERATONES ===== */
+/*  SIGUERATONES  */
 
 var browserPrefix = "";
 var usrAg = navigator.userAgent;
@@ -113,7 +113,7 @@ $links2.on("mouseleave", function (e) {
 });
 
 
-/* ===== MENU SHOW ===== */
+/*  MENU SHOW  */
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -127,7 +127,7 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 
-/* ===== ACTIVE AND REMOVE MENU ===== */
+/*  ACTIVE AND REMOVE MENU  */
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){
@@ -142,7 +142,7 @@ navMenu.classList.remove('show')
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
-/* ===== SCROLL REVEAL ANIMATION ===== */
+/*  SCROLL REVEAL ANIMATION  */
 const sr = ScrollReveal({
     distance: '30px',
     duration: 1800,
@@ -189,7 +189,7 @@ sr.reveal('.exp2',{delay: 200, origin: 'bottom'});*/
 /* = SCROLL PROJECT = */
 sr.reveal('.video',{delay:100, origin:'top'});
 
-/* ===== BACK TO TOP BUTTON ===== */
+/*  BACK TO TOP BUTTON  */
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
@@ -253,7 +253,7 @@ function easeInOutCubic(t, b, c, d) {
 };
 
 
-/* ==================== DARK LIGHT THEME ==================== */
+/*  DARK LIGHT THEME  */
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bxs-sun'
@@ -302,8 +302,8 @@ themeButton.addEventListener('click', () => {
 })
 
 
-/* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
-/* ==================== ACTIVATE CONFETTI ==================== */
+/*  SCROLL SECTIONS ACTIVE LINK  */
+/*  ACTIVATE CONFETTI  */
 const sections = document.querySelectorAll('section[id]')
 var activarconfetti = true;
 function scrollActive(){
@@ -329,7 +329,7 @@ window.addEventListener('scroll', scrollActive)
 }
 
 
-/*========== QUALIFICATION  TABS ==========*/
+/* QUALIFICATION  TABS */
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
 
@@ -349,7 +349,7 @@ tabs.forEach(tab =>{
     })
 })
 
-/* ========== SKILLS SLIDER ==========*/
+/*  SKILLS SLIDER */
 $(document).ready(function() {
   $('.customer-logos').slick({
     slidesToShow: 4,
@@ -379,7 +379,7 @@ $(document).ready(function() {
 });
 
 
-/* ========== AUTOHIDE NAV ON SCROLL ==========*/
+/*  AUTOHIDE NAV ON SCROLL */
 var prev = 0;
 var $window = $(window);
 var nav = $(".l-header");
@@ -391,7 +391,7 @@ $window.on("scroll", function () {
 });
 
 
-/* ========== CONFETTI JS ==========*/
+/*  CONFETTI JS */
 
 var confetti = {
 	maxCount: 200,
@@ -521,7 +521,7 @@ var confetti = {
 }();
 
 
-/* ========== CLOCK ==========*/
+/*  CLOCK */
 
 function showTime(){
   var date = new Date();
@@ -597,7 +597,7 @@ showTime();
 }
 
 
-/* ==================== DYNAMIC COPYRIGHT YEAR ==================== */
+/*  DYNAMIC COPYRIGHT YEAR  */
 function copyright() {
   copyrightYear = new Date().getFullYear();
   copyFinal = "© "  + copyrightYear + " Made by Atharv Mayur Tambekar";
@@ -606,7 +606,7 @@ function copyright() {
 copyright();
 
 
-/* ==================== TIPYNG TITLE ANIMATION ==================== */
+/*  TIPYNG TITLE ANIMATION  */
 window.ityped.init(document.querySelector('.ityped'),{
   strings: ['Software Engineer','Full Stack Developer','Mobile App Developer(React-Native)','2D Game Developer'],
   loop: true,
@@ -615,5 +615,5 @@ window.ityped.init(document.querySelector('.ityped'),{
 })
 
 
-/* ==================== CHANGE LANGUAGE ES/EN ==================== */
+/*  CHANGE LANGUAGE ES/EN  */
 
