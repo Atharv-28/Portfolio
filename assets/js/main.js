@@ -679,10 +679,9 @@ copyright();
 /*  TIPYNG TITLE ANIMATION  */
 window.ityped.init(document.querySelector(".ityped"), {
   strings: [
-    "Software Engineer",
-    "Full Stack Developer",
+    "Diploma Graduate in Computer Science & Engineering",
+    "Full Stack Developer (M-E-R-N)",
     "Mobile App Developer(React-Native)",
-    "2D Game Developer",
   ],
   loop: true,
   typeSpeed: 150,
